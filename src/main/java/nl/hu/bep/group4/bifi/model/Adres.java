@@ -1,6 +1,6 @@
 package nl.hu.bep.group4.bifi.model;
 
-public class Adressen {
+public class Adres {
     private String straat;
     private enum type {
         factuur,
