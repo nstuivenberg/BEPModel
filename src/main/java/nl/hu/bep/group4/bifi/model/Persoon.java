@@ -7,8 +7,8 @@ public class Persoon {
     private String telefoon;
     private String fax;
     private enum geslacht {
-        man,
-        vrouw
+        Man,
+        Vrouw
     }
 
 }
