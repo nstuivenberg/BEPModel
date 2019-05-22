@@ -6,14 +6,23 @@ public class Factuur {
     private Date datumtijd;
     private int nummer;
     private Klant klant;
+    private Persoon contactPersoon;
     private String opmerking;
     
-	public Factuur(Date datumtijd, int nummer, Klant klant, String opmerking) {
+	
+	public Factuur(Date datumtijd, int nummer, Klant klant, Persoon contactPersoon, String opmerking) {
 		super();
 		this.datumtijd = datumtijd;
 		this.nummer = nummer;
 		this.klant = klant;
+		this.contactPersoon = contactPersoon;
 		this.opmerking = opmerking;
+	}
+	public Persoon getContactPersoon() {
+		return contactPersoon;
+	}
+	public void setContactPersoon(Persoon contactPersoon) {
+		this.contactPersoon = contactPersoon;
 	}
 	public Date getDatumtijd() {
 		return datumtijd;
