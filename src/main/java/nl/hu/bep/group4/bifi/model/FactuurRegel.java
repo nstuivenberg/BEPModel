@@ -14,6 +14,8 @@ public class FactuurRegel {
         KILOGRAM
     }
     
+    public FactuurRegel() {}
+    
 	public FactuurRegel(int productID, String productNaam, double aantal, double totaalprijsExBTW) {
 		super();
 		this.productID = productID;

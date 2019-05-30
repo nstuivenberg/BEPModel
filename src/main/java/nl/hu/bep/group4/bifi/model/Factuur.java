@@ -84,9 +84,4 @@ public class Factuur {
 	public void setContactPersoon(Persoon contactPersoon) {
 		this.contactPersoon = contactPersoon;
 	}
-	
-	
-	
-
-	
 }
