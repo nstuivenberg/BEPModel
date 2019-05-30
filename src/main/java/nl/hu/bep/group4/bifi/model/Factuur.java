@@ -84,4 +84,11 @@ public class Factuur {
 	public void setContactPersoon(Persoon contactPersoon) {
 		this.contactPersoon = contactPersoon;
 	}
+
+	@Override
+	public String toString() {
+		return "Factuur [klant=" + klant + ", datumtijd=" + datumtijd + ", factuurNummer=" + factuurNummer
+				+ ", factuurregels=" + factuurregels + ", opmerking=" + opmerking + ", contactPersoon=" + contactPersoon
+				+ "]";
+	}
 }

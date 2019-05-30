@@ -12,6 +12,11 @@ public class Persoon {
         MAN,
         VROUW
     }
+    
+    public Persoon(String id) {
+    	super();
+    	this.id = id;
+    }
 	public Persoon(String id, String voornaam, String achternaam, String tussenvoegsel, String telefoon, String fax,
 			Geslacht geslacht) {
 		super();

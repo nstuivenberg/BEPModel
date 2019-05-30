@@ -14,6 +14,10 @@ public class Klant {
     private List<Adres> adres;
     private Adres factuurAdres;
     
+    public Klant(String id) {
+    	super();
+    	this.id = id;
+    }
 	public Klant(String id, String bedrijfsnaam, String rechtsvorm, String vAT, String bankrekeningNummer,
 			String giroNummer, String biC, List<Persoon> contactPersonen, List<Adres> adres, Adres factuurAdres) {
 		super();
