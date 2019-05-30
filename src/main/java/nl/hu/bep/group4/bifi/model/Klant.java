@@ -3,7 +3,7 @@ package nl.hu.bep.group4.bifi.model;
 import java.util.List;
 
 public class Klant {
-	private String id;
+	private int id;
     private String bedrijfsnaam;
     private String rechtsvorm;
     private String VAT;
@@ -14,11 +14,11 @@ public class Klant {
     private List<Adres> adres;
     private Adres factuurAdres;
     
-    public Klant(String id) {
+    public Klant(int id) {
     	super();
     	this.id = id;
     }
-	public Klant(String id, String bedrijfsnaam, String rechtsvorm, String vAT, String bankrekeningNummer,
+	public Klant(int id, String bedrijfsnaam, String rechtsvorm, String vAT, String bankrekeningNummer,
 			String giroNummer, String biC, List<Persoon> contactPersonen, List<Adres> adres, Adres factuurAdres) {
 		super();
 		this.id = id;
@@ -32,10 +32,10 @@ public class Klant {
 		this.adres = adres;
 		this.factuurAdres = factuurAdres;
 	}
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getBedrijfsnaam() {

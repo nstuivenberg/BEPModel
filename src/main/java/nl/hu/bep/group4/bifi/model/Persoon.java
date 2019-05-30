@@ -1,7 +1,7 @@
 package nl.hu.bep.group4.bifi.model;
 
 public class Persoon {
-	private String id;
+	private int id;
     private String voornaam;
     private String achternaam;
     private String tussenvoegsel;
@@ -13,11 +13,11 @@ public class Persoon {
         VROUW
     }
     
-    public Persoon(String id) {
+    public Persoon(int id) {
     	super();
     	this.id = id;
     }
-	public Persoon(String id, String voornaam, String achternaam, String tussenvoegsel, String telefoon, String fax,
+	public Persoon(int id, String voornaam, String achternaam, String tussenvoegsel, String telefoon, String fax,
 			Geslacht geslacht) {
 		super();
 		this.id = id;
@@ -28,10 +28,10 @@ public class Persoon {
 		this.fax = fax;
 		this.geslacht = geslacht;
 	}
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getVoornaam() {
