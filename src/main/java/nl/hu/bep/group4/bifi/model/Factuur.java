@@ -9,6 +9,7 @@ public class Factuur {
     private Persoon contactPersoon;
     private String opmerking;
     
+	public Factuur() {}
 	
 	public Factuur(Date datumtijd, int nummer, Klant klant, Persoon contactPersoon, String opmerking) {
 		super();
