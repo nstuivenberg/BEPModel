@@ -25,12 +25,12 @@ public class Factuur {
 	}
 
 
-	public Klant getKlantId() {
+	public Klant getKlant() {
 		return klant;
 	}
 
 
-	public void setKlantId(Klant klant) {
+	public void setKlant(Klant klant) {
 		this.klant = klant;
 	}
 
