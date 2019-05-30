@@ -1,11 +1,10 @@
 package nl.hu.bep.group4.bifi.model;
 
-import java.util.Date;
 import java.util.List;
 
 public class Factuur {
 	private Klant klant;
-	private Date datumtijd;
+	private String datumtijd;
     private int factuurNummer;
     private List<FactuurRegel> factuurregels;
     private String opmerking;
@@ -15,7 +14,7 @@ public class Factuur {
 	public Factuur() {}
 
 
-	public Factuur(Klant klant, Date datumtijd, int factuurNummer, List<FactuurRegel> factuurregels, String opmerking,
+	public Factuur(Klant klant, String datumtijd, int factuurNummer, List<FactuurRegel> factuurregels, String opmerking,
 			Persoon contactPersoon) {
 		this.klant = klant;
 		this.datumtijd = datumtijd;
@@ -36,12 +35,12 @@ public class Factuur {
 	}
 
 
-	public Date getDatumtijd() {
+	public String getDatumtijd() {
 		return datumtijd;
 	}
 
 
-	public void setDatumtijd(Date datumtijd) {
+	public void setDatumtijd(String datumtijd) {
 		this.datumtijd = datumtijd;
 	}
 
