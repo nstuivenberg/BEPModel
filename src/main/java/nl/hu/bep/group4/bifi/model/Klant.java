@@ -92,5 +92,10 @@ public class Klant {
 	public void setFactuurAdres(Adres factuurAdres) {
 		this.factuurAdres = factuurAdres;
 	}
-    
+	@Override
+	public String toString() {
+		return "Klant [id=" + id + ", bedrijfsnaam=" + bedrijfsnaam + ", rechtsvorm=" + rechtsvorm + ", VAT=" + VAT
+				+ ", bankrekeningNummer=" + bankrekeningNummer + ", giroNummer=" + giroNummer + ", BiC=" + BiC
+				+ ", contactPersonen=" + contactPersonen + ", adres=" + adres + ", factuurAdres=" + factuurAdres + "]";
+	}
 }

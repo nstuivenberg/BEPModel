@@ -50,4 +50,9 @@ public class Adres {
 	public void setBiC(String biC) {
 		BiC = biC;
 	}
+	@Override
+	public String toString() {
+		return "Adres [straat=" + straat + ", huisnummer=" + huisnummer + ", postcode=" + postcode + ", plaats="
+				+ plaats + ", BiC=" + BiC + "]";
+	}
 }

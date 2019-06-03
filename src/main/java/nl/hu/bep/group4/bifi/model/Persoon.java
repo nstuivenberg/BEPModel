@@ -70,4 +70,9 @@ public class Persoon {
 	public void setGeslacht(Geslacht geslacht) {
 		this.geslacht = geslacht;
 	}
+	@Override
+	public String toString() {
+		return "Persoon [id=" + id + ", voornaam=" + voornaam + ", achternaam=" + achternaam + ", tussenvoegsel="
+				+ tussenvoegsel + ", telefoon=" + telefoon + ", fax=" + fax + ", geslacht=" + geslacht + "]";
+	}
 }

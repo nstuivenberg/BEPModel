@@ -77,4 +77,9 @@ public class FactuurRegel {
 		this.unit = unit;
 	}
 
+	@Override
+	public String toString() {
+		return "FactuurRegel [productID=" + productID + ", productNaam=" + productNaam + ", aantal=" + aantal
+				+ ", totaalprijsExBTW=" + totaalprijsExBTW + ", btwCode=" + btwCode + ", unit=" + unit + "]";
+	}
 }
