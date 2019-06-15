@@ -65,8 +65,8 @@ public class FactuurRegelTest {
     @Test
     public void testSetBTWCodeGeen() {
         createFactuur();
-        factuurRegel.setBtwCode(FactuurRegel.BTWcode.LAAG);
-        assertEquals(FactuurRegel.BTWcode.LAAG, factuurRegel.getBtwCode());
+        factuurRegel.setBtwCode(FactuurRegel.BTWcode.GEEN);
+        assertEquals(FactuurRegel.BTWcode.GEEN, factuurRegel.getBtwCode());
     }
     @Test
     public void testSetUnit() {
