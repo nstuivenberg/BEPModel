@@ -17,12 +17,12 @@ public class Persoon {
     public Persoon(int id) {
     	this.id = id;
     }
-	public Persoon(int id, String voornaam, String achternaam, String tussenvoegsel, String telefoon, String fax,
+	public Persoon(int id, String voornaam, String tussenvoegsel, String achternaam, String telefoon, String fax,
 			Geslacht geslacht) {
 		this.id = id;
 		this.voornaam = voornaam;
-		this.achternaam = achternaam;
 		this.tussenvoegsel = tussenvoegsel;
+		this.achternaam = achternaam;
 		this.telefoon = telefoon;
 		this.fax = fax;
 		this.geslacht = geslacht;
@@ -40,17 +40,17 @@ public class Persoon {
 	public void setVoornaam(String voornaam) {
 		this.voornaam = voornaam;
 	}
-	public String getAchternaam() {
-		return achternaam;
-	}
-	public void setAchternaam(String achternaam) {
-		this.achternaam = achternaam;
-	}
 	public String getTussenvoegsel() {
 		return tussenvoegsel;
 	}
 	public void setTussenvoegsel(String tussenvoegsel) {
 		this.tussenvoegsel = tussenvoegsel;
+	}
+	public String getAchternaam() {
+		return achternaam;
+	}
+	public void setAchternaam(String achternaam) {
+		this.achternaam = achternaam;
 	}
 	public String getTelefoon() {
 		return telefoon;
@@ -73,7 +73,8 @@ public class Persoon {
 
 	@Override
 	public String toString() {
-		return "Persoon [id=" + id + ", voornaam=" + voornaam + ", achternaam=" + achternaam + ", tussenvoegsel="
-				+ tussenvoegsel + ", telefoon=" + telefoon + ", fax=" + fax + ", geslacht=" + geslacht + "]";
+		return "Persoon [id=" + id + ", voornaam=" + voornaam + ", tussenvoegsel=" + tussenvoegsel
+				+ ", achternaam=" + achternaam + ", telefoon=" + telefoon + ", fax=" + fax
+				+ ", geslacht=" + geslacht + "]";
 	}
 }

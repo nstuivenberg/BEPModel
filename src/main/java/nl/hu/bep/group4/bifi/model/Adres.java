@@ -2,7 +2,6 @@ package nl.hu.bep.group4.bifi.model;
 
 public class Adres {
     private String straat;
-
     private String huisnummer;
     private String postcode;
     private String plaats;
@@ -15,6 +14,7 @@ public class Adres {
 		this.plaats = plaats;
 		this.bic = bic;
 	}
+	
 	public String getStraat() {
 		return straat;
 	}
