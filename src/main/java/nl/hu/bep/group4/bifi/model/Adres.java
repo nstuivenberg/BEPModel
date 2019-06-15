@@ -2,15 +2,10 @@ package nl.hu.bep.group4.bifi.model;
 
 public class Adres {
     private String straat;
-    public enum Type {
-        FACTUUR,
-        POST,
-        AFLEVERADRES
-    }
     private String huisnummer;
     private String postcode;
     private String plaats;
-    private String BiC;
+    private String biC;
     
 	public Adres(String straat, String huisnummer, String postcode, String plaats, String biC) {
 		super();
@@ -18,8 +13,9 @@ public class Adres {
 		this.huisnummer = huisnummer;
 		this.postcode = postcode;
 		this.plaats = plaats;
-		BiC = biC;
+		this.biC = biC;
 	}
+	
 	public String getStraat() {
 		return straat;
 	}
@@ -45,14 +41,14 @@ public class Adres {
 		this.plaats = plaats;
 	}
 	public String getBiC() {
-		return BiC;
+		return biC;
 	}
 	public void setBiC(String biC) {
-		BiC = biC;
+		this.biC = biC;
 	}
 	@Override
 	public String toString() {
 		return "Adres [straat=" + straat + ", huisnummer=" + huisnummer + ", postcode=" + postcode + ", plaats="
-				+ plaats + ", BiC=" + BiC + "]";
+				+ plaats + ", BiC=" + biC + "]";
 	}
 }
