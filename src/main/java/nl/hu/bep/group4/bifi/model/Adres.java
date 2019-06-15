@@ -5,15 +5,14 @@ public class Adres {
     private String huisnummer;
     private String postcode;
     private String plaats;
-    private String biC;
+    private String bic;
     
-	public Adres(String straat, String huisnummer, String postcode, String plaats, String biC) {
-		super();
+	public Adres(String straat, String huisnummer, String postcode, String plaats, String bic) {
 		this.straat = straat;
 		this.huisnummer = huisnummer;
 		this.postcode = postcode;
 		this.plaats = plaats;
-		this.biC = biC;
+		this.bic = bic;
 	}
 	
 	public String getStraat() {
@@ -40,15 +39,15 @@ public class Adres {
 	public void setPlaats(String plaats) {
 		this.plaats = plaats;
 	}
-	public String getBiC() {
-		return biC;
+	public String getBic() {
+		return bic;
 	}
-	public void setBiC(String biC) {
-		this.biC = biC;
+	public void setBic(String bic) {
+		this.bic = bic;
 	}
 	@Override
 	public String toString() {
 		return "Adres [straat=" + straat + ", huisnummer=" + huisnummer + ", postcode=" + postcode + ", plaats="
-				+ plaats + ", BiC=" + biC + "]";
+				+ plaats + ", BiC=" + bic + "]";
 	}
 }

@@ -8,18 +8,17 @@ public class Persoon {
     private String telefoon;
     private String fax;
     private Geslacht geslacht;
+
     public enum Geslacht {
         MAN,
         VROUW
     }
     
     public Persoon(int id) {
-    	super();
     	this.id = id;
     }
 	public Persoon(int id, String voornaam, String tussenvoegsel, String achternaam, String telefoon, String fax,
 			Geslacht geslacht) {
-		super();
 		this.id = id;
 		this.voornaam = voornaam;
 		this.tussenvoegsel = tussenvoegsel;
@@ -28,6 +27,7 @@ public class Persoon {
 		this.fax = fax;
 		this.geslacht = geslacht;
 	}
+
 	public int getId() {
 		return id;
 	}
@@ -70,6 +70,7 @@ public class Persoon {
 	public void setGeslacht(Geslacht geslacht) {
 		this.geslacht = geslacht;
 	}
+
 	@Override
 	public String toString() {
 		return "Persoon [id=" + id + ", voornaam=" + voornaam + ", tussenvoegsel=" + tussenvoegsel
