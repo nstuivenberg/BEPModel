@@ -75,6 +75,13 @@ public class FactuurRegelTest {
         assertEquals(KILOGRAM, factuurRegel.getUnit());
     }
 
+    @Test
+    public void testToString() {
+        createFactuur();
+        assertEquals("FactuurRegel [productID=1, productNaam=Peter, aantal=2.2, totaalprijsExBTW=2.22, btwCode=LAAG, unit=KILOGRAM]",
+                factuurRegel.toString());
+    }
+
     private void createFactuur() {
         factuurRegel = new FactuurRegel(1,
                 "Peter",
