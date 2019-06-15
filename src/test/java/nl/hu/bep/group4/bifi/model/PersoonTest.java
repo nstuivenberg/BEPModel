@@ -28,6 +28,8 @@ public class PersoonTest {
         assertEquals("Larie", persoon.getAchternaam());
         assertEquals("of", persoon.getTussenvoegsel());
         assertEquals("0612345678", persoon.getTelefoon());
+        assertEquals("0612345678", persoon.getFax());
+        assertEquals(Persoon.Geslacht.VROUW, persoon.getGeslacht());
 
 
     }
