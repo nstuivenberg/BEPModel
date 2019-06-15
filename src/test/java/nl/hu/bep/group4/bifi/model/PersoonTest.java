@@ -38,8 +38,8 @@ public class PersoonTest {
         persoon = new Persoon(
                 1,
                 "Nick",
-                "Larie",
                 "of",
+                "Larie",
                 "0612345678",
                 "0612345678",
                 Persoon.Geslacht.VROUW
