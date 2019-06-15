@@ -2,18 +2,13 @@ package nl.hu.bep.group4.bifi.model;
 
 public class Adres {
     private String straat;
-    public enum Type {
-        FACTUUR,
-        POST,
-        AFLEVERADRES
-    }
+
     private String huisnummer;
     private String postcode;
     private String plaats;
     private String bic;
     
 	public Adres(String straat, String huisnummer, String postcode, String plaats, String bic) {
-		super();
 		this.straat = straat;
 		this.huisnummer = huisnummer;
 		this.postcode = postcode;
