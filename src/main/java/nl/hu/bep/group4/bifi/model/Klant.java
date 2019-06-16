@@ -6,10 +6,10 @@ public class Klant {
 	private int id;
     private String bedrijfsnaam;
     private String rechtsvorm;
-    private String VAT;
+    private String vat;
     private String bankrekeningNummer;
     private String giroNummer;
-    private String BiC;
+    private String bic;
     private List<Persoon> contactPersonen;
     private List<Adres> adres;
     private Adres factuurAdres;
@@ -18,16 +18,16 @@ public class Klant {
     	super();
     	this.id = id;
     }
-	public Klant(int id, String bedrijfsnaam, String rechtsvorm, String vAT, String bankrekeningNummer,
-			String giroNummer, String biC, List<Persoon> contactPersonen, List<Adres> adres, Adres factuurAdres) {
+	public Klant(int id, String bedrijfsnaam, String rechtsvorm, String vat, String bankrekeningNummer,
+			String giroNummer, String bic, List<Persoon> contactPersonen, List<Adres> adres, Adres factuurAdres) {
 		super();
 		this.id = id;
 		this.bedrijfsnaam = bedrijfsnaam;
 		this.rechtsvorm = rechtsvorm;
-		VAT = vAT;
+		this.vat = vat;
 		this.bankrekeningNummer = bankrekeningNummer;
 		this.giroNummer = giroNummer;
-		BiC = biC;
+		this.bic = bic;
 		this.contactPersonen = contactPersonen;
 		this.adres = adres;
 		this.factuurAdres = factuurAdres;
@@ -51,10 +51,10 @@ public class Klant {
 		this.rechtsvorm = rechtsvorm;
 	}
 	public String getVAT() {
-		return VAT;
+		return this.vat;
 	}
-	public void setVAT(String vAT) {
-		VAT = vAT;
+	public void setVAT(String vat) {
+		this.vat = vat;
 	}
 	public String getBankrekeningNummer() {
 		return bankrekeningNummer;
@@ -69,10 +69,10 @@ public class Klant {
 		this.giroNummer = giroNummer;
 	}
 	public String getBiC() {
-		return BiC;
+		return bic;
 	}
-	public void setBiC(String biC) {
-		BiC = biC;
+	public void setBiC(String bic) {
+		this.bic = bic;
 	}
 	public List<Persoon> getContactPersonen() {
 		return contactPersonen;
@@ -94,8 +94,8 @@ public class Klant {
 	}
 	@Override
 	public String toString() {
-		return "Klant [id=" + id + ", bedrijfsnaam=" + bedrijfsnaam + ", rechtsvorm=" + rechtsvorm + ", VAT=" + VAT
-				+ ", bankrekeningNummer=" + bankrekeningNummer + ", giroNummer=" + giroNummer + ", BiC=" + BiC
+		return "Klant [id=" + id + ", bedrijfsnaam=" + bedrijfsnaam + ", rechtsvorm=" + rechtsvorm + ", vat=" + vat
+				+ ", bankrekeningNummer=" + bankrekeningNummer + ", giroNummer=" + giroNummer + ", bic=" + bic
 				+ ", contactPersonen=" + contactPersonen + ", adres=" + adres + ", factuurAdres=" + factuurAdres + "]";
 	}
 }
