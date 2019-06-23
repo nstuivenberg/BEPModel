@@ -88,7 +88,7 @@ public class FactuurTest {
     @Test
     public void testToString() {
         setup();
-        String expected = "Factuur [klant=Klant [id=1, bedrijfsnaam=null, rechtsvorm=null, VAT=null, bankrekeningNummer=null, giroNummer=null, bic=null, contactPersonen=null, adres=null, factuurAdres=null], datumtijd=datumtijd, factuurNummer=1, factuurregels=[], opmerking=opmerking, contactPersoon=Persoon [id=1, voornaam=null, tussenvoegsel=null, achternaam=null, telefoon=null, fax=null, geslacht=MAN]]";
+        String expected = "Factuur [klant=Klant [id=1, bedrijfsnaam=null, rechtsvorm=null, vat=null, bankrekeningNummer=null, giroNummer=null, bic=null, contactPersonen=null, adres=null, factuurAdres=null], datumtijd=datumtijd, factuurNummer=1, factuurregels=[], opmerking=opmerking, contactPersoon=Persoon [id=1, voornaam=null, tussenvoegsel=null, achternaam=null, telefoon=null, fax=null, geslacht=MAN]]";
 
         assertEquals(expected, factuur.toString());
     }
