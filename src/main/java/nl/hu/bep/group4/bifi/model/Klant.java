@@ -18,6 +18,8 @@ public class Klant {
     	super();
     	this.id = id;
     }
+
+    @SuppressWarnings("squid:S00107")
 	public Klant(int id, String bedrijfsnaam, String rechtsvorm, String vat, String bankrekeningNummer,
 			String giroNummer, String bic, List<Persoon> contactPersonen, List<Adres> adres, Adres factuurAdres) {
 		super();
