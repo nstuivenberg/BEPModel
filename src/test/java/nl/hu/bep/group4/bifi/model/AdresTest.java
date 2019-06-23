@@ -49,7 +49,7 @@ public class AdresTest {
     @Test
     public void testToString() {
         setup();
-        String expected = "Adres [straat=weg, huisnummer=1, postcode=1234AB, plaats=Ede, BiC=22]";
+        String expected = "Adres [straat=weg, huisnummer=1, postcode=1234AB, plaats=Ede, bic=22]";
         assertEquals(expected, testAdres.toString());
     }
 }

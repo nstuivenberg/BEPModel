@@ -8,5 +8,6 @@ import nl.hu.bep.group4.bifi.exceptions.GarbageDataException;
 import nl.hu.bep.group4.bifi.model.Factuur;
 
 public interface FactuurLader {
-	public List<Factuur> getFacturenVoorMaand(int maandNummer) throws GarbageDataException, ClassNotFoundException, SQLException, IOException;
+	List<Factuur> getFacturenVoorMaand(int maandNummer)
+			throws GarbageDataException, ClassNotFoundException, SQLException, IOException;
 }
