@@ -100,6 +100,13 @@ public class KlantTest {
     }
 
     @Test
+    public void testBic() {
+        setup();
+        klant.setBiC("bic");
+        assertEquals("bic", klant.getBiC());
+    }
+
+    @Test
     public void testToString() {
         setup();
         assertEquals("Klant [id=1, bedrijfsnaam=bedrijf, rechtsvorm=BV, vat=vat, bankrekeningNummer=123456789, giroNummer=12, bic=12, contactPersonen=[], adres=[], factuurAdres=Adres [straat=factuuradres, huisnummer=1, postcode=1234AB, plaats=Ede, bic=22]]",
