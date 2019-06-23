@@ -5,5 +5,5 @@ import java.util.List;
 import nl.hu.bep.group4.bifi.model.Factuur;
 
 public interface IEFExporter {
-	public void exportFacturen(List<Factuur> facturen);
+	String exportFacturen(List<Factuur> facturen);
 }
